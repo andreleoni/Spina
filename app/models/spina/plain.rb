@@ -1,8 +1,8 @@
 module Spina
   class Plain < ApplicationRecord
-    extend Mobility
+    self.table_name = "spina_texts"
 
-    table_name "spina_texts"
+    extend Mobility
 
     translates :content
 
