@@ -1,7 +1,5 @@
 require_relative 'config/application'
 
-Rails.application.load_tasks
-
 #!/usr/bin/env rake
 begin
   require 'bundler/setup'
@@ -43,3 +41,5 @@ end
 
 
 task :default => :test
+
+Rails.application.load_tasks
